@@ -7,9 +7,15 @@
 ✨ Features
 
 ✅ User authentication (Login, Register, JWT)
+
 📋 Create, edit, delete, and complete tasks
+
 🏷️ Task priority & status tracking
+
 🔍 Filter & sort tasks
+
 💡 Responsive & user-friendly UI
+
 🔐 Secure APIs with JWT
+
 🌐 RESTful API architecture

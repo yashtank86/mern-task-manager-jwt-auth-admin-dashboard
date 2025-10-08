@@ -4,6 +4,7 @@ import { API_PATHS } from "../../utils/apiPaths";
 import { LuUsers } from "react-icons/lu";
 import Model from "../Model";
 import AvatarGroup from "../AvatarGroup";
+import DEFAULT_PROFILE_PICTURE from "../../../public/default_user.webp";
 
 const SelectUsers = ({ selectedUsers, setSelectedUsers }) => {
   const [allUsers, setAllUsers] = useState([]);
@@ -76,7 +77,7 @@ const SelectUsers = ({ selectedUsers, setSelectedUsers }) => {
               className="flex items-center gap-4 p-3 border-b border-gray-200"
             >
               <img
-                src={user.profileImageUrl}
+                src={user.profileImageUrl || DEFAULT_PROFILE_PICTURE}
                 alt={user.name}
                 className="w-10 h-10 rounded-full"
               />

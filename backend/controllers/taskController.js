@@ -20,10 +20,11 @@ const getTasks = async (req, res) => {
         "name email profileImageUrl"
       );
     } else {
-      tasks = await Task.find({ ...filter, assignedTo: req.user._id }).populate(
-        "assignedTo",
-        "name email profileImageUrl"
-      );
+      tasks = await Task.find({
+        ...filter,
+        assignedTo: req.user._id,
+      }).populate("assignedTo", "name email profileImageUrl");
+      // console.log("ID---->", req.user._id);
     }
 
     //add todoChecklist count to each task
@@ -38,7 +39,7 @@ const getTasks = async (req, res) => {
 
     // status summary counts
     const allTasks = await Task.countDocuments(
-      req.user.role === "admin" ? {} : { assignedTo: res.user._id }
+      req.user.role === "admin" ? {} : { assignedTo: req.user._id }
     );
 
     const pendingTasks = await Task.countDocuments({

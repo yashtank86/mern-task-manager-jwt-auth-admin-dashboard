@@ -76,7 +76,7 @@ const TaskListTable = ({ tableData }) => {
               </td>
               <td className="py-4 px-4 text-gray-700 text-[13px] text-nowrap hidden md:table-cell">
                 {task.createdAt
-                  ? moment(task.createdAt).format("Do MM YYYY")
+                  ? moment(task.createdAt).format("Do MMM YYYY")
                   : "N/A"}
               </td>
             </tr>

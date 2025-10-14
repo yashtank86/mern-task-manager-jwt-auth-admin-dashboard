@@ -9,7 +9,7 @@ const excelJs = require("exceljs");
  */
 const exportTasksReport = async (req, res) => {
   try {
-    const tasks = await Task.find().populate("assignTo", "name email");
+    const tasks = await Task.find().populate("assignedTo", "name email");
     const workbook = new excelJs.Workbook();
     const worksheet = workbook.addWorksheet("Tasks Report");
 
@@ -17,8 +17,8 @@ const exportTasksReport = async (req, res) => {
       { header: "Task ID", key: "_id", width: 25 },
       { header: "Title", key: "title", width: 30 },
       { header: "Description", key: "description", width: 50 },
-      { header: "Priority", key: "Priority", width: 15 },
-      { header: "Status", key: "Status", width: 20 },
+      { header: "Priority", key: "priority", width: 15 },
+      { header: "Status", key: "status", width: 20 },
       { header: "Due Date", key: "dueDate", width: 20 },
       { header: "Assigned To", key: "assignedTo", width: 30 },
     ];
@@ -105,7 +105,7 @@ const exportUsersReport = async (req, res) => {
     const worksheet = workbook.addWorksheet("User Tasks Report");
 
     worksheet.columns = [
-      { header: "User Name", key: "name", width: 30 },
+      { header: "Username", key: "name", width: 30 },
       { header: "Email", key: "email", width: 40 },
       { header: "Total Assigned Task", key: "taskCount", width: 20 },
       { header: "Pending Task", key: "pendingTasks", width: 20 },

@@ -1,5 +1,5 @@
 import React from "react";
-import DEFAULT_PROFILE_PICTURE from "../../../public/default_user.webp"
+import DEFAULT_PROFILE_PICTURE from "../../assets/images/default_user.webp"
 
 const UserCard = ({ userInfo }) => {
   return (

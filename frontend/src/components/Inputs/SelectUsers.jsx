@@ -4,7 +4,7 @@ import { API_PATHS } from "../../utils/apiPaths";
 import { LuUsers } from "react-icons/lu";
 import Model from "../Model";
 import AvatarGroup from "../AvatarGroup";
-import DEFAULT_PROFILE_PICTURE from "../../../public/default_user.webp";
+import DEFAULT_PROFILE_PICTURE from "../../assets/images/default_user.webp";
 
 const SelectUsers = ({ selectedUsers, setSelectedUsers }) => {
   const [allUsers, setAllUsers] = useState([]);

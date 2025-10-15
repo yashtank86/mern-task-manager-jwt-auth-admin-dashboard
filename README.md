@@ -5,6 +5,7 @@
 
 Explore Live Website Here
   - https://taskmanager-frontend-b3zq.onrender.com
+  - dummy User Email: kobi@google.com / password: kobi@111
 
 
 ✨ Features

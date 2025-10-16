@@ -7,8 +7,8 @@ _A powerful task management web app built with the MERN stack featuring authenti
 ---
 
 ### 🌐 **Live Demo**
-🔗 [View Deployed App on Render](https://your-app-url.onrender.com)  
-💻 [View Source Code on GitHub](https://github.com/yourusername/task-manager)
+🔗 [View Deployed App on Render](https://taskmanager-frontend-b3zq.onrender.com)  
+💻 [View Source Code on GitHub](https://github.com/yashtank86/Task-Manager-MernStack)
 
 ---
 

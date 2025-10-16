@@ -1,7 +1,8 @@
 
 # 🧠 Task Manager — MERN Stack Project
 
-![Task Manager Banner](./assets/banner.png)
+![Task Manager Banner](<img width="1280" height="640" alt="banner_task_manager" src="https://github.com/user-attachments/assets/66169120-03c1-4127-a3fd-1bbe8f7a8829" />
+)
 _A powerful task management web app built with the MERN stack featuring authentication, dashboards, task analytics, and admin-user collaboration._
 
 ---
@@ -186,7 +187,7 @@ Task-Manager/
 ## 🧑‍💻 **Author**
 **Yash T.**  
 💼 Junior Software Engineer  
-🌍 [LinkedIn](https://linkedin.com/in/your-link)  
+🌍 [LinkedIn](https://linkedin.com/in/yashtank86)  
 📧 [Email Me](mailto:work.tankyash@gmail.com)
 
 ---

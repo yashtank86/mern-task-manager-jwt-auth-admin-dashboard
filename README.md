@@ -1,8 +1,7 @@
 
 # 🧠 Task Manager — MERN Stack Project
 
-![Task Manager Banner](<img width="1280" height="640" alt="banner_task_manager" src="https://github.com/user-attachments/assets/66169120-03c1-4127-a3fd-1bbe8f7a8829" />
-)
+![Task Manager Banner](https://github.com/user-attachments/assets/66169120-03c1-4127-a3fd-1bbe8f7a8829)
 _A powerful task management web app built with the MERN stack featuring authentication, dashboards, task analytics, and admin-user collaboration._
 
 ---
@@ -16,20 +15,34 @@ _A powerful task management web app built with the MERN stack featuring authenti
 ## 📸 **Screenshots**
 
 ### 🔐 Authentication (Login / Register)
-![Login Page](./screenshots/login.png)
-![Register Page](./screenshots/register.png)
+| Login Page |
+|:-------------:|
+|<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/d555e06e-871e-4b2c-97b2-91bd24532e82" />|
+|**Register Page**|
+|<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/ea5049f1-5785-4fb7-bbf2-583c78f5d579" />|
+
+
 
 ### 🧑‍💼 Admin Dashboard
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+<img width="1500" height="1000" alt="admin_dashboard" src="https://github.com/user-attachments/assets/1727c1f5-517d-4dad-9556-5b4847dd9484" />
+
 
 ### 👤 User Dashboard
-![User Dashboard](./screenshots/user-dashboard.png)
+<img width="1500" height="1000" alt="user_dashboard" src="https://github.com/user-attachments/assets/bc499c4d-ff56-44d4-b840-94665e520ae4" />
+
 
 ### 📋 Task Creation (Admin)
-![Create Task](./screenshots/create-task.png)
+<img width="1500" height="852" alt="Screenshot 2025-10-09 024115" src="https://github.com/user-attachments/assets/6a0cb1fd-c69a-48b7-ab7b-380c16c62fa0" />
+
 
 ### 📊 Reports & Analytics
-![Reports](./screenshots/reports.png)
+|User Details|
+|:-------------:|
+|<img width="1500" height="852" alt="image" src="https://github.com/user-attachments/assets/312310ec-3360-4211-9c92-3681c0ca83c0" />|
+|**Task Details**|
+|<img width="1500" height="852" alt="image" src="https://github.com/user-attachments/assets/d73c154f-f0dd-45c5-8415-918147c402f3" />|
+
+
 
 ---
 
@@ -44,7 +57,7 @@ _A powerful task management web app built with the MERN stack featuring authenti
 
 ### 📊 **Dashboard Analytics**
 #### 🧑 User Dashboard:
-- Displays task statistics using **Pie Chart** (Pending, In Progress, Completed).
+- Displays only User related task statistics using **Pie Chart** (Pending, In Progress, Completed).
 - **Bar Chart** showing Task Priority distribution (Low, Medium, High).
 - Recently added tasks section.
 - Task counters at the top:  
@@ -52,7 +65,7 @@ _A powerful task management web app built with the MERN stack featuring authenti
 
 #### 🧑‍💼 Admin Dashboard:
 - Overview of all system tasks and users.
-- Same analytics charts for quick insights.
+- Same analytics charts for quick insights of entire system.
 - Recently created tasks summary.
 - Team performance overview.
 
@@ -98,8 +111,8 @@ _A powerful task management web app built with the MERN stack featuring authenti
 
 | Layer | Technology |
 |-------|-------------|
-| **Frontend** | React.js, React Router, Axios, Chart.js, Tailwind CSS |
-| **Backend** | Node.js, Express.js, Cors|
+| **Frontend** | React.js, React Router, Axios, Chart.js, Tailwind CSS, Toaster |
+| **Backend** | Node.js, Express.js, Cors, Multer, Excel.js|
 | **Database** | MongoDB (Mongoose ORM) |
 | **Authentication** | JSON Web Tokens (JWT), bcrypt |
 | **Deployment** | Render (Backend + Frontend), GitHub |
@@ -121,54 +134,60 @@ Make sure you have installed:
 
 ```bash
 # 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/task-manager.git
+git clone https://github.com/yashtank86/Task-Manager-MernStack.git
 
 # 2️⃣ Navigate into Project
-cd task-manager
+cd Task-Manager-MernStack
 
 # 3️⃣ Install Dependencies
-cd server && npm install
-cd ../client && npm install
+cd backend && npm install
+cd frontend && npm install
 
 # 4️⃣ Add Environment Variables
-Create `.env` file in `server` folder and add:
+Create `.env` file in `backend` folder and add:
+PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_secret_key
-PORT=5000
+ADMIN_INVITE_TOKEN= 7 digit Code choose any 
 
 # 5️⃣ Run Backend
-cd server
-npm start
+cd backend
+npm start or npm run dev
 
 # 6️⃣ Run Frontend
-cd client
-npm start
+cd frontend
+npm start or npm run dev
 ```
 
-Then open 👉 `http://localhost:3000`
+Then open frontend 👉 `http://localhost:5173` 
+- The server runs on a PORT that may vary depending on your environment.
 
 ---
 
 ## 📦 **Folder Structure**
 
 ```
-Task-Manager/
+Task-Manager-MernStack/
 │
 ├── client/                # React Frontend
 │   ├── src/
+│   │   ├── assets/        # Static files like images, icons, fonts
 │   │   ├── components/    # UI Components
 │   │   ├── pages/         # Page Components
 │   │   ├── context/       # Context API
+│   │   ├── hooks/         # custom hooks
 │   │   ├── utils/         # Helper functions
-│   │   └── App.js
+│   │   ├── routes/        # Route configuration
+│   │   └── App.jsx
 │   └── package.json
 │
 ├── server/                # Node + Express Backend
 │   ├── config/            # Database & JWT config
 │   ├── controllers/       # Business Logic
+│   ├── middleware/        # Auth Middleware
 │   ├── models/            # Mongoose Models
 │   ├── routes/            # API Routes
-│   ├── middleware/        # Auth Middleware
+│   ├── uploads/           # User Profile Pic Storage
 │   └── server.js
 │
 └── README.md
@@ -186,7 +205,7 @@ Task-Manager/
 
 ## 🧑‍💻 **Author**
 **Yash T.**  
-💼 Junior Software Engineer  
+💼 Software Developer  
 🌍 [LinkedIn](https://linkedin.com/in/yashtank86)  
 📧 [Email Me](mailto:work.tankyash@gmail.com)
 
@@ -201,4 +220,4 @@ If you like this project, don’t forget to ⭐ **star** the repository and shar
 
 | Admin Dashboard | User Dashboard |
 |-----------------|----------------|
-| ![Admin Dashboard](./screenshots/admin-dashboard.png) | ![User Dashboard](./screenshots/user-dashboard.png) |
+| <img width="1500" height="1000" alt="admin_dashboard" src="https://github.com/user-attachments/assets/1727c1f5-517d-4dad-9556-5b4847dd9484" />| <img width="1500" height="1000" alt="user_dashboard" src="https://github.com/user-attachments/assets/bc499c4d-ff56-44d4-b840-94665e520ae4" /> |

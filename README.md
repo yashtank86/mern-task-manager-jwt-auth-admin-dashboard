@@ -218,7 +218,7 @@ Task-Manager-MernStack/
 ---
 
 ## 🧑‍💻 **Author**
-**Yash T.**  
+**Yash Tank**  
 💼 Software Developer  
 🌍 [LinkedIn](https://linkedin.com/in/yashtank86)  
 📧 [Email Me](mailto:work.tankyash@gmail.com)
@@ -232,6 +232,6 @@ If you like this project, don’t forget to ⭐ **star** the repository and shar
 
 ## 🖼️ **Sample Preview**
 
-| Admin Dashboard | User Dashboard |
-|-----------------|----------------|
-| <img width="1500" height="1000" alt="admin_dashboard" src="https://github.com/user-attachments/assets/1727c1f5-517d-4dad-9556-5b4847dd9484" />| <img width="1500" height="1000" alt="user_dashboard" src="https://github.com/user-attachments/assets/bc499c4d-ff56-44d4-b840-94665e520ae4" /> |
+### Sample Preview
+
+Check out the dashboards in the [Screenshots above](#screenshots) or view them live in the demo.

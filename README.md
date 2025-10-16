@@ -97,8 +97,8 @@ _A powerful task management web app built with the MERN stack featuring authenti
 
 | Layer | Technology |
 |-------|-------------|
-| **Frontend** | React.js, React Router, Axios, Chart.js / Recharts, Tailwind CSS |
-| **Backend** | Node.js, Express.js |
+| **Frontend** | React.js, React Router, Axios, Chart.js, Tailwind CSS |
+| **Backend** | Node.js, Express.js, Cors|
 | **Database** | MongoDB (Mongoose ORM) |
 | **Authentication** | JSON Web Tokens (JWT), bcrypt |
 | **Deployment** | Render (Backend + Frontend), GitHub |
@@ -187,7 +187,7 @@ Task-Manager/
 **Yash T.**  
 💼 Junior Software Engineer  
 🌍 [LinkedIn](https://linkedin.com/in/your-link)  
-📧 [Email Me](mailto:your.email@example.com)
+📧 [Email Me](mailto:work.tankyash@gmail.com)
 
 ---
 

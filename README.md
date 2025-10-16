@@ -7,8 +7,21 @@ _A powerful task management web app built with the MERN stack featuring authenti
 ---
 
 ### 🌐 **Live Demo**
-🔗 [View Deployed App on Render](https://taskmanager-frontend-b3zq.onrender.com) | dummy User Email: kobi@google.com / Password: kobi@111  
+🔗 [View Deployed App on Render](https://taskmanager-frontend-b3zq.onrender.com)   
 💻 [View Source Code on GitHub](https://github.com/yashtank86/Task-Manager-MernStack)
+
+> ⚠️ **Note:**  
+> - Render’s free tier **automatically shuts down the app** if it hasn't been used for a while.  
+>   To load the app, you may need to **refresh the page** after opening the live demo.  
+> - Uploaded **images/files may be removed** due to free-tier storage limitations.  
+
+### Dummy User Credentials
+
+You can use these credentials to log in and test the app:
+
+| Role       | Email              | Password   |
+|------------|--------------------|------------|
+| User       | kobi@google.com    | kobi@111   |
 
 ---
 

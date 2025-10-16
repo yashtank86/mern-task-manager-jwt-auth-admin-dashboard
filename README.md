@@ -183,7 +183,7 @@ Then open frontend 👉 `http://localhost:5173`
 ```
 Task-Manager-MernStack/
 │
-├── client/                # React Frontend
+├── frontend/              # React Frontend
 │   ├── src/
 │   │   ├── assets/        # Static files like images, icons, fonts
 │   │   ├── components/    # UI Components
@@ -195,7 +195,7 @@ Task-Manager-MernStack/
 │   │   └── App.jsx
 │   └── package.json
 │
-├── server/                # Node + Express Backend
+├── backend/               # Node + Express Backend
 │   ├── config/            # Database & JWT config
 │   ├── controllers/       # Business Logic
 │   ├── middleware/        # Auth Middleware

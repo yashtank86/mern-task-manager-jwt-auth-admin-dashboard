@@ -1,29 +1,22 @@
 
 # 🧠 Task Manager — MERN Stack Project
 
-<<<<<<< HEAD
 ![Task Manager Banner](./assets/banner.png)
 _A powerful task management web app built with the MERN stack featuring authentication, dashboards, task analytics, and admin-user collaboration._
-=======
 
 ---
 
 ### 🌐 **Live Demo**
-🔗 [View Deployed App on Render](https://taskmanager-frontend-b3zq.onrender.com)
-    - dummy User Email: kobi@google.com / password: kobi@111
-💻 [View Source Code on GitHub](https://github.com/yashtank86/Task-Manager-MernStack.git)
+🔗 [View Deployed App on Render](https://your-app-url.onrender.com)  
+💻 [View Source Code on GitHub](https://github.com/yourusername/task-manager)
 
 ---
 
 ## 📸 **Screenshots**
 
-<<<<<<< HEAD
 ### 🔐 Authentication (Login / Register)
 ![Login Page](./screenshots/login.png)
 ![Register Page](./screenshots/register.png)
-=======
-📥 Download Task & User Reports (Excel File)
->>>>>>> 5d3be2e023756f9de4f31f995b19f0e2e131595f
 
 ### 🧑‍💼 Admin Dashboard
 ![Admin Dashboard](./screenshots/admin-dashboard.png)

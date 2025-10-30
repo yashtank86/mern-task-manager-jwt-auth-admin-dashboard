@@ -9,7 +9,7 @@ _A powerful task management web app built with the MERN stack featuring authenti
 
 ### 🌐 **Live Demo**
 🔗 [View Deployed App on Render](https://taskmanager-frontend-b3zq.onrender.com)   
-💻 [View Source Code on GitHub](https://github.com/yashtank86/Task-Manager-MernStack)
+💻 [View Source Code on GitHub](https://github.com/yashtank86/mern-task-manager-jwt-auth-admin-dashboard)
 
 > ⚠️ **Note:**  
 > - Render’s free tier **automatically shuts down the app** if it hasn't been used for a while.  
@@ -151,10 +151,10 @@ Make sure you have installed:
 
 ```bash
 # 1️⃣ Clone the Repository
-git clone https://github.com/yashtank86/Task-Manager-MernStack.git
+git clone https://github.com/yashtank86/mern-task-manager-jwt-auth-admin-dashboard.git
 
 # 2️⃣ Navigate into Project
-cd Task-Manager-MernStack
+cd mern-task-manager-jwt-auth-admin-dashboard
 
 # 3️⃣ Install Dependencies
 cd backend && npm install
@@ -165,7 +165,7 @@ Create `.env` file in `backend` folder and add:
 PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_secret_key
-ADMIN_INVITE_TOKEN= 7 digit Code choose any 
+ADMIN_INVITE_TOKEN= 7-digit-Code-choose-any 
 
 # 5️⃣ Run Backend
 cd backend
@@ -184,7 +184,7 @@ Then open frontend 👉 `http://localhost:5173`
 ## 📦 **Folder Structure**
 
 ```
-Task-Manager-MernStack/
+mern-task-manager-jwt-auth-admin-dashboard/
 │
 ├── frontend/              # React Frontend
 │   ├── src/
@@ -231,6 +231,7 @@ Task-Manager-MernStack/
 ## ⭐ **Support**
 If you like this project, don’t forget to ⭐ **star** the repository and share it!
 
+<!--
 ---
 
 ## 🖼️ **Sample Preview**
@@ -238,3 +239,5 @@ If you like this project, don’t forget to ⭐ **star** the repository and shar
 ### Sample Preview
 
 Check out the dashboards in the [Screenshots above](#screenshots) or view them live in the demo.
+
+-->

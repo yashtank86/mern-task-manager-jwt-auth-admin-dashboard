@@ -16,6 +16,8 @@ _A powerful task management web app built with the MERN stack featuring authenti
 >   To load the app, you may need to **refresh the page** after opening the live demo.  
 > - Uploaded **images/files may be removed** due to free-tier storage limitations.  
 
+<!--
+
 ### Dummy User Credentials
 
 You can use these credentials to log in and test the app:
@@ -24,6 +26,7 @@ You can use these credentials to log in and test the app:
 |------------|--------------------|------------|
 | User       | kobi@google.com    | kobi@111   |
 
+-->
 ---
 
 ## 📸 **Screenshots**
